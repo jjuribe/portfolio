@@ -10,11 +10,15 @@ June 2022
 var express = require('express');
 var router = express.Router();
 
-/* GET projects page. */
+/* GET services page. */
 
-router.get('/projects', function(req, res, next) {
-  res.render('projects', { title: 'Projects' });
+router.get('/services', function(req, res, next) {
+  res.render('services', { title: 'Services' });
 });
+
+
+
+
 
 
 

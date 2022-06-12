@@ -1,3 +1,12 @@
+/* 
+Jose Uribe
+Centennial College
+juribeco@my.centennialcollege.ca
+301236090
+COMP229
+June 2022
+*/
+
 //3rd party modules
 let createError = require('http-errors');
 let express = require('express');
@@ -8,9 +17,9 @@ let logger = require('morgan');
 
 //routes
 let indexRouter = require('../routes/index');
-let usersRouter = require('../routes/users');
 let projectsRouter = require('../routes/projects');
 let aboutmeRouter = require('../routes/aboutme');
+let servicesRouter= require('../routes/services')
 
 
 const { Console } = require('console');
@@ -30,9 +39,10 @@ app.use(cookieParser());
 app.use(express.static(path.join(__dirname, '../public')));
 app.use(express.static(path.join(__dirname, '../node_modules')));
 app.use('/', indexRouter);
-app.use('/users', usersRouter);
 app.use('/projects',projectsRouter);
 app.use('/aboutme',aboutmeRouter);
+app.use('/services',servicesRouter);
+
 app.use('*/images',express.static('public/Assets/images'));
 
 

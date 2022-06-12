@@ -1,3 +1,11 @@
+/* 
+Jose Uribe
+Centennial College
+juribeco@my.centennialcollege.ca
+301236090
+COMP229
+June 2022
+*/
 var express = require('express');
 var router = express.Router();
 
@@ -23,11 +31,12 @@ router.get('/projects', function(req, res, next) {
 });
 
 router.get('/contact', function(req, res, next) {
-  res.render('index', { title: 'Contact' });
+  res.render('contact', { title: 'Contact' });
 });
 
-
-
+router.get('/services', function(req, res, next) {
+  res.render('services', { title: 'Services' });
+});
 
 
 module.exports = router;

@@ -1,5 +1,15 @@
 #!/usr/bin/env node
 
+/* 
+Jose Uribe
+Centennial College
+juribeco@my.centennialcollege.ca
+301236090
+COMP229
+June 2022
+*/
+
+
 /**
  * Module dependencies.
  */
