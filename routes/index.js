@@ -15,16 +15,17 @@ router.get('/about', function(req, res, next) {
 });
 
 router.get('/aboutme', function(req, res, next) {
-  res.render('index', { title: 'About me' });
+  res.render('aboutme', { title: 'About me' });
 });
 
 router.get('/projects', function(req, res, next) {
-  res.render('index', { title: 'Projects' });
+  res.render('projects', { title: 'Projects' });
 });
 
 router.get('/contact', function(req, res, next) {
   res.render('index', { title: 'Contact' });
 });
+
 
 
 
