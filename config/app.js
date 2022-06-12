@@ -33,6 +33,8 @@ app.use('/', indexRouter);
 app.use('/users', usersRouter);
 app.use('/projects',projectsRouter);
 app.use('/aboutme',aboutmeRouter);
+app.use('*/images',express.static('public/Assets/images'));
+
 
 
 // catch 404 and forward to error handler
